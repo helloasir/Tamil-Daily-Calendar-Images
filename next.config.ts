@@ -16,8 +16,15 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'dailytamilcalander.web.app',
+        port: '',
+        pathname: '/images/**',
+      },
     ],
   },
 };
 
 export default nextConfig;
+
