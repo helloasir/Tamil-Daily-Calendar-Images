@@ -40,12 +40,12 @@ export default function Home() {
         {error && <p className="text-red-500">Error: {error}</p>}
 
         {imageUrl && (
-          <div className="relative h-[250px] w-[200px] sm:h-[400px] sm:w-[300px] md:h-[550px] md:w-[400px] lg:h-[700px] lg:w-[500px] shadow-lg rounded-md overflow-hidden">
+          <div className="relative w-full max-w-[500px] h-[250px] sm:h-[400px] md:h-[550px] lg:h-[700px] shadow-lg rounded-md overflow-hidden">
             <Image
               src={imageUrl}
               alt="Daily Tamil Calendar"
               fill
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: 'contain' }}
               priority
             />
           </div>
