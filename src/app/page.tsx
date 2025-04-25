@@ -40,7 +40,7 @@ export default function Home() {
         {error && <p className="text-red-500">Error: {error}</p>}
 
         {imageUrl && (
-          <div className="relative h-[300px] sm:h-[450px] md:h-[600px] w-[200px] sm:w-[300px] md:w-[400px] shadow-lg rounded-md overflow-hidden">
+          <div className="relative h-[250px] w-[200px] sm:h-[400px] sm:w-[300px] md:h-[550px] md:w-[400px] lg:h-[700px] lg:w-[500px] shadow-lg rounded-md overflow-hidden">
             <Image
               src={imageUrl}
               alt="Daily Tamil Calendar"
