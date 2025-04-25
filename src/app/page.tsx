@@ -31,8 +31,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background py-2">
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 text-center">
-        <h1 className="text-4xl font-bold text-primary mb-4">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
           Daily Tamil Calendar
         </h1>
 
@@ -40,7 +40,7 @@ export default function Home() {
         {error && <p className="text-red-500">Error: {error}</p>}
 
         {imageUrl && (
-          <div className="relative h-[600px] w-[400px] shadow-lg rounded-md overflow-hidden">
+          <div className="relative h-[300px] sm:h-[450px] md:h-[600px] w-[200px] sm:w-[300px] md:w-[400px] shadow-lg rounded-md overflow-hidden">
             <Image
               src={imageUrl}
               alt="Daily Tamil Calendar"
